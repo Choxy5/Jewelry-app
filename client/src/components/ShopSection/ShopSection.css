@@ -1,0 +1,93 @@
+.container_shop {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(5, 5vw);
+  grid-gap: 10px;
+  width: 100%;
+  max-width: 1300px;
+  grid-auto-flow: dense;
+  margin: 8rem auto;
+}
+
+.gallery-container {
+  max-width: 1300px;
+  width: 100%;
+}
+
+.gallery-item {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+
+.gallery-item .image {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.gallery-item .image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: 50% 50%;
+  cursor: pointer;
+  transition: 0.5s ease-in-out;
+}
+
+.gallery-item:hover .image img {
+  transform: scale(1.5);
+  filter: brightness(50%);
+}
+
+.gallery-item .text {
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #ffffff;
+  font-size: 25px;
+  font-family: 'Playfair Display';
+  pointer-events: none;
+  z-index: 4;
+  transition: 0.3s ease-in-out;
+}
+
+.gallery-item:hover .text {
+  opacity: 1;
+  animation: move-down 0.3s linear;
+  padding: 6px;
+}
+
+@keyframes move-down {
+  0% {
+    top: 10%;
+  }
+  50% {
+    top: 35%;
+  }
+  100% {
+    top: 50%;
+  }
+}
+
+.item-1 {
+  grid-row: 1 / span 5;
+  grid-column: 1 / span 2;
+}
+
+.item-2 {
+  grid-row: 1 / span 3;
+}
+
+.item-3 {
+  grid-row: 1 / span 3;
+}
+
+.item-4 {
+  grid-column: 3 / span 2;
+  grid-row: 4 / span 2;
+}
+
+

@@ -1,0 +1,155 @@
+.aboutSection {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1300px;
+  width: 100%;
+  margin: auto;
+  margin-bottom: 20px;
+  position: relative;
+  pointer-events: none;
+}
+
+.leftSection {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.aboutContent {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  background-color: #dcffc1;
+  width: 600px;
+  height: 600px;
+  z-index: 999;
+  padding-left: 100px;
+  position: relative;
+}
+
+.aboutSection h3 {
+  font-family: 'Playfair Display';
+  margin: 60px 0;
+  color: #7e462e;
+}
+
+.aboutSection span {
+  position: absolute;
+  font-size: 150px;
+  font-family: 'Playfair Display';
+  color: #d8d8d8;
+  top: 60px;
+  left: 300px;
+}
+
+.aboutSection h2 {
+  font-family: 'Playfair Display';
+  font-size: 40px;
+  color: #7e462e;
+  margin-top: 20px;
+  z-index: 999;
+}
+
+.aboutSection .aboutTop {
+  color: #7e462e;
+  opacity: 0.8;
+  margin: 40px 0 60px 0;
+}
+
+.aboutSection p {
+  color: #7e462e;
+}
+
+.rightSection .rightImg img {
+  display: flex;
+  width: 750px;
+  height: 600px;
+  object-fit: cover;
+  position: absolute;
+  top: 50px;
+  left: 500px;
+}
+
+@media (max-width: 1024px) {
+  .aboutSection {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 90%;
+    margin: auto;
+    margin-bottom: 20px;
+    position: relative;
+    pointer-events: none;
+  }
+
+  .leftSection {
+    height: 500px;
+    width: 550px;
+  }
+
+  .aboutContent {
+    height: 500px;
+    width: 650px;
+    padding: 0 60px;
+  }
+
+  .aboutContent span {
+    font-size: 130px;
+    left: 200px;
+  }
+
+  .aboutContent h2 {
+    font-size: 35px;
+  }
+
+  .aboutContent p {
+    font-size: 14px;
+  }
+
+  .rightSection {
+    max-width: 90%;
+    margin: 0 auto;
+  }
+
+  .rightImg {
+    max-width: 90%;
+    margin: 0 auto;
+  }
+
+  .rightSection .rightImg img {
+    display: flex;
+    width: 500px;
+    height: 500px;
+    object-fit: cover;
+    position: absolute;
+    top: 50px;
+    left: 380px;
+  }
+}
+
+/* @media (min-width: 1024px) {
+  .aboutSection {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 90%;
+    width: 100%;
+    margin: auto;
+    margin-bottom: 20px;
+    position: relative;
+    pointer-events: none;
+  }
+
+  .leftSection {
+    height: 500px;
+    width: 550px;
+  }
+
+  .aboutContent {
+    height: 500px;
+    width: 650px;
+    padding: 0 60px;
+  }
+} */

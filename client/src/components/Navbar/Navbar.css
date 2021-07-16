@@ -1,0 +1,73 @@
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 80px;
+  width: 100%;
+  max-width: 1300px;
+  margin: auto;
+}
+
+.navbar_left > img {
+  height: 100px;
+  width: 100px;
+  cursor: pointer;
+  transition: all 0.8s;
+}
+
+.navbar_left > img:hover {
+  rotate: 360deg;
+}
+
+.navbar_middle {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.form-icon {
+  margin-right: 10px;
+}
+
+.icon {
+  padding: 20px;
+  color: #7e462e;
+  text-transform: uppercase;
+  font-family: 'Roboto';
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.5s;
+  list-style: none;
+}
+
+.icon:hover {
+  transform: scaleX(0.7);
+}
+
+.materialIcon {
+  color: #7e462e;
+  cursor: pointer;
+  size: 10px;
+}
+
+.materialIcon:not(:last-child) {
+  padding-right: 30px;
+}
+
+.item-count {
+  position: absolute;
+  top: 20px;
+  right: 100px;
+  height: 20px;
+  width: 20px;
+  background-color: red;
+  color: white;
+  border-radius: 50%;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 11px;
+  cursor: pointer;
+}
+

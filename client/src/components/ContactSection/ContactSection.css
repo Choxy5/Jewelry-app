@@ -1,0 +1,32 @@
+.contactSection {
+  /* display: flex; */
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.contactSection img {
+  object-fit: cover;
+  width: 100%;
+  height: 400px;
+  margin: 200px 0;
+  filter: brightness(30%);
+}
+
+.contactSection button {
+  position: absolute;
+  top: 48%;
+  left: 36%;
+  z-index: 999;
+  padding: 20px 150px;
+  background-color: transparent;
+  color: #ffffff;
+  font-family: 'Playfair Display';
+  font-size: 20px;
+  cursor: pointer;
+  transition: all 0.5s ease-in-out;
+}
+
+.contactSection button:hover {
+  transform: scale(0.9);
+}

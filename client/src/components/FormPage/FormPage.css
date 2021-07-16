@@ -1,0 +1,43 @@
+.form {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  height: 90vh;
+}
+
+.register {
+  margin-top: 60px;
+  letter-spacing: 1px;
+  height: 500px;
+  width: 500px;
+  display: flex;
+  flex-direction: column;
+}
+
+.login {
+  margin-top: 60px;
+  height: 500px;
+  width: 500px;
+  display: flex;
+  flex-direction: column;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+input {
+  margin: 10px 0;
+  padding: 20px 0;
+  border: none;
+  border-bottom: 1px solid black;
+}
+
+button {
+  padding: 15px 0;
+  cursor: pointer;
+  background-color: #7e462e;
+  color: #ffffff;
+  font-size: 20px;
+}
